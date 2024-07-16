@@ -1,7 +1,10 @@
 Front-end design:
 
-HTML is used to add aspects like text, images, or icons to a webpage. It is not for styling/aesthetics.
+HTML VALIDATOR: validator.w3.org
 
+
+HTML is used to add aspects like text, images, or icons to a webpage. It is not for styling/aesthetics.
+Use the Prettier extension to make consistently formated html documents 
 
 How the web works:
 
@@ -10,7 +13,7 @@ A query goes from the browser/client to the host/server - client/server model
 http (hypertext transfer protocol) or https (http with encryption) is used to communicate between client and server in a request/response loop,
 called a protocol
 
-To render the website, the client requests all of the needed files like images and such from the server
+To render the website, the client requests all of the needed files like images and such from the server using the DOM (document object model)
 
 index.html is usually the homepage of a website
 
@@ -19,10 +22,13 @@ On a webpage, to access developer tools (useful when building side by side to se
 
 HTML is not case sensitive (thankfully), always start a document with <!DOCTYPE html>
 
-Most elements have an opening and closing element like <html> </html>
+Most elements have an opening and closing element like <html> </html>, and you can add a language declaration
 
 Here are a couple useful ones:
-<head> is a heading 
+<head> used to give more information about a webpage (which is why <style> goes in here)
+    for example, <meta charset="utf-8"> defines the character set used on the webpage. for bext practice, include these:
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=width-device, intial-scale=1.0" />
 <title> is the title of the webpage
 <body> is the stuff on the page
 <img> is for adding images - src is for the image path, alt is for text that will display if image can't be rendered

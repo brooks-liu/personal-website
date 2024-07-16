@@ -1,5 +1,7 @@
 How to style!
 
+CSS VALIDATOR: jigsaw.w3.org/css-validator/
+
 You can write css in the html doc by using <style>, and it goes in the <head>
 To edit an element (like an image):
 
