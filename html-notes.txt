@@ -1,0 +1,29 @@
+Front-end design:
+
+HTML is used to add aspects like text, images, or icons to a webpage. It is not for styling/aesthetics.
+
+
+How the web works:
+
+url - uniform resource locator (documents, images, fonts, etc.)
+A query goes from the browser/client to the host/server - client/server model
+http (hypertext transfer protocol) or https (http with encryption) is used to communicate between client and server in a request/response loop,
+called a protocol
+
+To render the website, the client requests all of the needed files like images and such from the server
+
+index.html is usually the homepage of a website
+
+
+On a webpage, to access developer tools (useful when building side by side to see changes) use ctrl+shift+i 
+
+HTML is not case sensitive (thankfully), always start a document with <!DOCTYPE html>
+
+Most elements have an opening and closing element like <html> </html>
+
+Here are a couple useful ones:
+<head> is a heading 
+<title> is the title of the webpage
+<body> is the stuff on the page
+<img> is for adding images - src is for the image path, alt is for text that will display if image can't be rendered
+<p> for paragraph (of text) - text elements use this
