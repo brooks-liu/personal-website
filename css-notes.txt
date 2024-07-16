@@ -1,0 +1,25 @@
+How to style!
+
+You can write css in the html doc by using <style>, and it goes in the <head>
+To edit an element (like an image):
+
+img {
+    <!--this is where css declarations go, common ones include: -->
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    float: left; --> pushes image to left
+    margin-right: 10px; --> distance between image and text on the right
+}
+p {
+    font-weight: bold;
+
+}
+
+p.class {
+    <!--applies to all paragraphs with the class "class"-->
+}
+
+.class {
+    <!--applies to all classes called "class", not just paragraphs-->
+}

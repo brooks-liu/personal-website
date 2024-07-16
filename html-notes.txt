@@ -27,3 +27,7 @@ Here are a couple useful ones:
 <body> is the stuff on the page
 <img> is for adding images - src is for the image path, alt is for text that will display if image can't be rendered
 <p> for paragraph (of text) - text elements use this
+    you can also include the class="" classificiation after p, and if you make a p.class css element to change paragraphs of that class
+
+
+<!--this is a comment-->
