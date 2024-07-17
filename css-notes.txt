@@ -17,7 +17,7 @@ img {
 p {
     font-weight: bold;
     font-style: normal;
-    colour: blue;
+    colour: blue;  or colour: rgb(1, 1, 1);  you can also use hexcode (just paste the hexcode)
 }
 
 p.class {

@@ -35,21 +35,66 @@ Here are a couple useful ones:
     don't use these for the size, use this for the heiarchy (cause you can always change size using css), and only use ONE h1 element
     can use this to organize <p> elements
     can add identifier like <h2 id="section1"> to create unique section identifiers
-<img> is for adding images - src is for the image path, alt is for text that will display if image can't be rendered
+<img> is for adding images - src is for the image path, alt="" is for text that will display if image can't be rendered, title="" for a description
 <p> for paragraph (of text) - text elements use this
     you can also include the class="" classificiation after p, and if you make a p.class css element to change paragraphs of that class
+<audio src=""> can put controls before src to add controls, can also include autoplay, muted and loop 
+    if you want multiple audios, make audio open and close tags, then put a bunch of <source=""> tags between them, and add some error text as well
+<video src=""> same thing as audio (see above)
 <em> for emphasizing. it defaults to italics, but you can change what it does using css 
 <strong> for important stuff (similar to <em>). defaults to bold
+<br> line break (doesn't need closing tag)
+<hr> horizontal rule (straight line to separate sections)
+<span> is like a create your own function, anything you put inbetween you can change the style, only applies within a section
+<div> is the same as span but for full blocks
+
 To display entities (like if you wanted to type <> on the website), use &stuffhere;
     for example: &lt;HTML&gt; means less than/greater than --> <HTML>
     for a complete list just search for html entities reference list
     &nbsp; ensures words are always put together and line breaks dont break the two words on different lines
+
 To hyperlink:
     anchor element <a href="filename"> </a> --> adding a "download" afterward the filename will make it downloadable
     can hyperlink to a different section of the page using a unique identifier, and type href="#section-name" to link to there
     you can make a link that auto jumps to the top by using href="#"
     go to an external website--> href="https://..."
-        can use target="_blank" afterwards to open it in a new tab
+        can use target=_blank afterwards to open it in a new tab or _self to open in the same window
+        title="" can be used to create the popup description
     to link to email--> href=="mailto:email"
 
+
 <!--this is a comment-->
+
+HTML Lists:
+Unordered List:
+    <ul>
+        <li>item</li>   --> these create bullets
+    </ul>
+
+Ordered List:
+    <ol type="">
+        <li>item</li>   --> creates a numbered list, can set to letter, number, roman numeral using type
+    </ol>
+
+Description List:
+    <dl>
+        <dt>  (description term)
+            Term
+        </dt>
+
+        <dd>   (desciption definition)
+            This is indented as a default
+        </dd>
+    </dl>
+
+HTML Tables:
+<table bgcolour="">
+    <tr bgcolour="" align="">    (table row, background colour, align type)
+        <th>    (table header)
+        </th>
+    </tr>
+    <tr>
+        <td>    (table data)
+        <td>
+    </tr>
+</table>
