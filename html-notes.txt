@@ -31,9 +31,25 @@ Here are a couple useful ones:
     <meta name="viewport" content="width=width-device, intial-scale=1.0" />
 <title> is the title of the webpage
 <body> is the stuff on the page
+<h1> through <h6> are heading sizes
+    don't use these for the size, use this for the heiarchy (cause you can always change size using css), and only use ONE h1 element
+    can use this to organize <p> elements
+    can add identifier like <h2 id="section1"> to create unique section identifiers
 <img> is for adding images - src is for the image path, alt is for text that will display if image can't be rendered
 <p> for paragraph (of text) - text elements use this
     you can also include the class="" classificiation after p, and if you make a p.class css element to change paragraphs of that class
-
+<em> for emphasizing. it defaults to italics, but you can change what it does using css 
+<strong> for important stuff (similar to <em>). defaults to bold
+To display entities (like if you wanted to type <> on the website), use &stuffhere;
+    for example: &lt;HTML&gt; means less than/greater than --> <HTML>
+    for a complete list just search for html entities reference list
+    &nbsp; ensures words are always put together and line breaks dont break the two words on different lines
+To hyperlink:
+    anchor element <a href="filename"> </a> --> adding a "download" afterward the filename will make it downloadable
+    can hyperlink to a different section of the page using a unique identifier, and type href="#section-name" to link to there
+    you can make a link that auto jumps to the top by using href="#"
+    go to an external website--> href="https://..."
+        can use target="_blank" afterwards to open it in a new tab
+    to link to email--> href=="mailto:email"
 
 <!--this is a comment-->

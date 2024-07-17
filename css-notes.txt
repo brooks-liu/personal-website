@@ -12,10 +12,12 @@ img {
     border-radius: 10px;
     float: left; --> pushes image to left
     margin-right: 10px; --> distance between image and text on the right
+    object-fit: cover;  --> image covers the image box (whatever width/height you define that the image might not fit)
 }
 p {
     font-weight: bold;
-
+    font-style: normal;
+    colour: blue;
 }
 
 p.class {
