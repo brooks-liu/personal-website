@@ -2,8 +2,16 @@ How to style!
 
 CSS VALIDATOR: jigsaw.w3.org/css-validator/
 
-You can write css in the html doc by using <style>, and it goes in the <head>
-To edit an element (like an image):
+There are three types of CSS styling: inline, internal, and external
+Inline is like so:
+    <body style="background: black; height: 100px;">
+Internal is where you include a <style></style> box in the <head> of a document, and add the styles like seen below
+External (probably the one I'm going with):
+    Link a file (style.css) to the html file by using <link rel="stylesheet", href="style.css"> in the <head> tag
+    If you want to uniquely edit a certain aspect, create an id using <tag id="name"> and then use #name{css stuff} to reference them
+    If wanted a class of objects, use <tag class="name"> and then use tag.name or .name to reference them
+
+Some common ones:
 
 img {
     <!--this is where css declarations go, common ones include: -->
@@ -18,6 +26,10 @@ p {
     font-weight: bold;
     font-style: normal;
     colour: blue;  or colour: rgb(1, 1, 1);  you can also use hexcode (just paste the hexcode)
+    font-family: verdana, arial;   --> font! (with backup)
+    font-size: 16px; --> 16 is standard, can also use 1em (16px and scales with multiplier so 2em would be 32px)
+    font-weight: bold;
+    font-style: italic;
 }
 
 p.class {
@@ -26,4 +38,33 @@ p.class {
 
 .class {
     <!--applies to all classes called "class", not just paragraphs-->
+}
+
+
+To add fonts:
+    You can add fonts through a link:  <link href="fonts.google.com link"> under the <head> tag and then you can use them in your CSS file
+    can also include the files for the fonts in your directory, just use the ttf file and then do the following at the top of the CSS file:
+        @font-face{
+            src: url(filepath);
+            font-family: font_name;
+        }
+        And do this separately for all fonts that you uploaded 
+
+Borders:
+h1 {
+    border-style: solid;   (dashed, dotted, double, groove, ridge, inset, outset, none)
+    border-width: 2px;
+    border-colour: blue;
+    border-radius: 5px;    --> round corners
+    border-bottom: 3px, solid, red;
+}
+can also include the first three lines in one line: border: 3px solid black;
+
+Text/Box Shadows:
+p{
+    text-shadow: 3px 5px 2px red;   --> right shift, down shift, blur, colour   - you can add multiple shaoows in one text-shadow, just add comma
+}
+div.box1{
+    background-colour: grey;
+    box-shadow: 3px, 3px, 2px, black;  --> same as text-shadow
 }
