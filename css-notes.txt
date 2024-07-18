@@ -117,3 +117,14 @@ span.special{
 
 
 Width/Height:
+.box{
+    border: 2px solid;
+    padding: 25px;
+    height: auto;
+    width: 50%;    --> takes up half the page
+    float: left;   --> this wont put them on the same line because of the border taking up space. if you deleted the border they would be inline
+    max-width: 25%;   --> caps the max width (the 50% gets overruled), can also use min-width
+}   --> to disregard border + padding, add box-sizing: border-box;
+.container{
+    height: 100vh;  --> 100% of the viewport height
+}
