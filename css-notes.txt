@@ -68,3 +68,52 @@ div.box1{
     background-colour: grey;
     box-shadow: 3px, 3px, 2px, black;  --> same as text-shadow
 }
+
+
+Margin:
+body{
+    margin: 0px;
+}
+.box{
+    border: 5px solid;
+    font-size: 2em;
+}
+#box1{
+    margin-top: 50px;  --> you can also use margin: 50px; to set all of them. can also use margin: auto; makes it as much as possible on all sides
+    margin-bottom, margin-right, margin-left;
+}
+
+Float: to wrap around box elements (like divs and imgs)
+body{
+    display: flow-root;   --> anything thats floating stays in the body and doesnt overflow
+}
+#img1{
+    float: left; --> image is on the left of the screen
+    margin: 10px;
+}
+
+Overflow: define what happens when items overflow the container
+div{
+    border: 2px;
+    height: 75px;
+    overflow: visible; (default is visible, also hidden, clip, scroll, auto - diplays scroll bar only when needed)
+    overflow-clip-margin: 12px;   --> used in tandem with clip to define how much it is allowed to overflow, defaults to 0
+}
+
+Display:
+    Default display values are inline or block-level. Block-level starts on a new line and takes up the entire line, where inline do not do either.
+    For example, div p and h1 are block-level, whereas span a and img are inline.
+
+span{
+    display: block;  --> now it will act as a block element and you can diplay a width and height
+}
+div{
+    display: inline;  --> self explanatory
+}
+span.special{
+    display: inline-block;  --> block but inline (so you can apply a width/height)
+    visibility: hidden;   --> still takes up the space but just cant see it
+}
+
+
+Width/Height:
