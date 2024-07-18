@@ -29,6 +29,10 @@ Here are a couple useful ones:
     for example, <meta charset="utf-8"> defines the character set used on the webpage. for bext practice, include these:
     <meta charset="utf-8" />
     <meta name="viewport" content="width=width-device, intial-scale=1.0" />
+    <meta> gives attributes to a website, like how <meta name="description" content=""> writes the description for the webpage that 
+    shows up on the web
+    the name="keywords" helps with search engine optimization
+    <meta http-equiv="refresh" content="30"> refreshes the page every 30 seconds
 <title> is the title of the webpage
 <body> is the stuff on the page
 <h1> through <h6> are heading sizes
@@ -47,6 +51,7 @@ Here are a couple useful ones:
 <hr> horizontal rule (straight line to separate sections)
 <span> is like a create your own function, anything you put inbetween you can change the style, only applies within a section
 <div> is the same as span but for full blocks
+<header> and <footer> are self explanatory
 
 To display entities (like if you wanted to type <> on the website), use &stuffhere;
     for example: &lt;HTML&gt; means less than/greater than --> <HTML>
@@ -62,6 +67,9 @@ To hyperlink:
         title="" can be used to create the popup description
     to link to email--> href=="mailto:email"
 
+<iframe src="https://bing.com"> will imbed bing onto your website (a lot of websites don't let you do this)
+
+<button></button> you can disable the button by adding the disabled boolean 
 
 <!--this is a comment-->
 
@@ -98,3 +106,46 @@ HTML Tables:
         <td>
     </tr>
 </table>
+
+HTML Forms:
+<form action="form_data.php" method="GET"> 
+--> action will tell the page to send the data inputted to somewhere. GET puts the info in the url, POST is secure
+
+    <label for="fname">First Name:</label>  --> good practice to fill out a for attribute
+    <input type="text" id="fname" name="fname" placeholder="Type Here" required> 
+    --> variable when user gives input, placeholder and required are self explanatory
+
+    <input type="password" maxlength="12">   --> hides the text, adds maxlength
+    <input type="email">
+    <input type="tel">
+    <input type="data>
+    <input type="number">
+
+    <div>   --> these are options that are in the same group (have same name), so you can only select one
+        <label>Male</label>
+        <input type="radio name="samename">
+
+        <label>Female</label>
+        <input type="radio name="samename">
+
+        <label>Other</label>
+        <input type="radio name="samename">
+    </div>
+
+    <div>   --> for dropdown menu
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option>Canada</option>
+            <option>US</option>
+            <option>Mexico</option>
+        </select>
+    </div>
+
+    <div>   --> for checkboxes
+        <label for="subscribe">Subscribe?</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+    </div>
+
+    <input type="reset">
+    <input type="submit"> 
+</form>
