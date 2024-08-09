@@ -128,3 +128,11 @@ Width/Height:
 .container{
     height: 100vh;  --> 100% of the viewport height
 }
+
+
+Position:
+div{
+    position: {relative, fixed, absolute, sticky, static}
+    in order, give some values like top/left to move it and it gets moved and stays relative, stays fixed to the viewport (even when scrolling), 
+    stays relative to an ancestor (think superclass), based on scroll bar position (stays in place when you scroll past it), default position
+}
