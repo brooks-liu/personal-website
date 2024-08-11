@@ -1,4 +1,5 @@
 How to style!
+My biggest takeaway: stop watching start doing
 
 CSS VALIDATOR: jigsaw.w3.org/css-validator/
 
@@ -135,4 +136,41 @@ div{
     position: {relative, fixed, absolute, sticky, static}
     in order, give some values like top/left to move it and it gets moved and stays relative, stays fixed to the viewport (even when scrolling), 
     stays relative to an ancestor (think superclass), based on scroll bar position (stays in place when you scroll past it), default position
+}
+
+Background image:
+body{
+    background-image: url(./background.jpg);   --> if the image isn't big enough it'll repeat itself automatically
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachement: fixed;   --> fixed doesn't move with scroll
+    background-size: cover;   --> fits to entire size
+}
+
+Combinators:
+      = descendant (space)
+    > = child
+    ~ = general sibiling
+    + = adjacent sibiling
+
+<div id="container"> 
+    <p> P1 </p>
+    <div>
+        <p> P2 </p>
+    </div>
+</div>
+<p> P3 </p>
+<p> P4 </p>
+
+#container p{    --> descendant
+    background-color: yellow;    --> highlights p1 and p2
+}
+#container > p{    --> descendant
+    background-color: yellow;    --> highlights p1 only
+}
+#container ~ p{    --> descendant
+    background-color: yellow;    --> highlights p3 and p4 because they are under the same body
+}
+#container + p{    --> descendant
+    background-color: yellow;    --> highlights p3 only because it is the next adjacent sibling
 }
