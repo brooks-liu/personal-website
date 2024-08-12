@@ -92,6 +92,10 @@ body{
     float: left; --> image is on the left of the screen
     margin: 10px;
 }
+*{   --> select all
+    box-sizing: border-box;  --> factors in padding into the width calculations (if using percentages for width)
+}
+
 
 Overflow: define what happens when items overflow the container
 div{
@@ -128,6 +132,9 @@ Width/Height:
 }   --> to disregard border + padding, add box-sizing: border-box;
 .container{
     height: 100vh;  --> 100% of the viewport height
+}
+footer{   
+    clear: float;   --> clears the float from the above box
 }
 
 
@@ -243,4 +250,13 @@ Semantic Tags in Web Design:
     <article> = independent content
     <footer> = closing content
 
+@media screen and (max-width: 600px){   --> assume we have aside, section, and article horizontally layed out as an example
+    aside, section, article{
+        width: 100%;     --> stacks them on top of each other
+    }
+}
 
+
+
+Icons:
+    Use fontawesome and follow instructions
