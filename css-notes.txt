@@ -174,3 +174,30 @@ Combinators:
 #container + p{    --> descendant
     background-color: yellow;    --> highlights p3 only because it is the next adjacent sibling
 }
+
+
+Pseudo-classes:
+    key words added to a selector, good for dropdown menus
+For a link, for example:
+
+a:hover{     --> can also do stuff like a:not(:hover) to define it when not hovered
+    color: red;
+    font-size: 1.1em;
+}
+a:active{    --> after click
+    color: purple;
+}
+a:visited{
+    color: grey;
+}
+
+
+Pseudo-elements:
+    Selects certain elements of a selector
+
+h1::first-letter{   --> first-line, selection, before/after are all other options
+    font-size: 2em;
+}
+li::before{
+    content: "💻";
+}
