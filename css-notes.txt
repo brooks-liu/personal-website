@@ -201,3 +201,46 @@ h1::first-letter{   --> first-line, selection, before/after are all other option
 li::before{
     content: "💻";
 }
+li::marker{   --> changes from bullet point to checkmark
+    content: "✅";
+}
+
+
+Navigation Bar:
+<nav class="navbar">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</nav>
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margins: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar li{
+    float: left;
+}
+
+
+Semantic Tags in Web Design:
+    
+    <header> = introductory content
+    <nav> = navbar, links
+    <main> = main content (includes the next three)
+    <section> = dependant
+    <aside> = side content 
+    <article> = independent content
+    <footer> = closing content
+
+
