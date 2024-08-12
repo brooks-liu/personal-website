@@ -260,3 +260,54 @@ Semantic Tags in Web Design:
 
 Icons:
     Use fontawesome and follow instructions
+
+
+
+Flexbox:
+.container{
+    display: flex;
+    flex-direction: row;  --> default is row, row-reverse reverses it, column, column-reverse
+    justify-content: flex-start;   --> default, center, flex-end puts it at the end of the main axis (defined by flex-direction), space-between
+                                       space-around, space-evenly
+    align-items: flex-start;    --> for the cross-axis (other-axis), flex-end, center, baseline (text is aligned)
+    flex-wrap: wrap;   --> default is no-wrap, wrap-reverse  
+    align-content: flex-start;   --> USED WITH FLEX-WRAP, flex-end, center, space-evenly, space-between
+    column-gap: 5px;
+    row-gap: 5px;
+}
+#box1{
+    align-self: start;   --> center, end, along the cross-axis
+    order: -1;   --> default (at the start), 1 is at the end
+}
+
+
+
+Transformations:
+#box1{
+    transform: translate(100px, 100px);   --> also rotateX/Y/Z(10deg), scale(1, 0.5) (1 means 100%), skew(0deg, 0deg)
+}
+
+
+
+Animations:
+
+#box1{
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: normal;  --> default, reverse, alternate, alternate-reverse
+    animation-play-state: paused;  --> default is running  (would be useful with javascript)
+    animation-timing-function: ease-in-out;   --> default (slows before reaching destination), linear (constant speed), steps(5) (makes a stop
+                                                  motion effect kind of), and can also make custom ones by dragging/defining a function (Google)
+}
+
+@keyframes slideLeft{    --> slides to the left from the right
+    from{
+        transform: translateX(100px)
+    }
+}
+@keyframes slideRight{    --> slides to the right from starting
+    to{
+        transform: translateX(100px)
+    }
+}    --> can also use the % instead of to and from, % just marks the time that the animation completes
